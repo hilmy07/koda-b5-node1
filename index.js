@@ -19,13 +19,6 @@ function convertDateFormat(dateString) {
 // console.log(`Converted date: ${outputDate}`); 
 
 rl.question("Masukkan tanggal (DD-MM-YYYY): ", (inputDate) => {
-    const datePattern = /^\d{2}-\d{2}-\d{4}$/;
-
-    if (!datePattern.test(inputDate)) {
-        console.log("not valid format!");
-        rl.close();
-        return;
-    }
 
     const outputDate = convertDateFormat(inputDate);
     console.log(`Tanggal yang dikonversi: ${outputDate}`);
