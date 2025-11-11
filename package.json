@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node index.js",
-    "lint": "eslint ."
+    "lint": "npx eslint .",
+    "fix": "npx eslint --fix"
   },
   "dependencies": {
     "moment": "^2.30.1"
